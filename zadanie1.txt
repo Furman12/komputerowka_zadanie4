@@ -1,0 +1,49 @@
+Comenda 'find' „Znajduje” pliki. Domyślnie wyświetla ścieżkę względem miejsca, w którym uruchomiono wyszukiwanie.
+Przykłady:
+(base)  romafurman-MBP find / -size 50M - Szuka wszystkie 50MB pliki
+find: /usr/sbin/authserver: Permission denied
+find: /Library/Application Support/Apple/ParentalControls/Users: Permission denied
+find: /Library/Application Support/Apple/AssetCache/Data: Permission denied
+find: /Library/Application Support/ApplePushService: Permission denied
+find: /Library/Caches/com.apple.iconservices.store: Permission denied
+find: /System/Library/DirectoryServices/DefaultLocalDB/Default: Permission denied
+
+Szuka pliki w podkatalogach o maksymalnej głębokości 2
+(base) MBP-Roma:255909 romafurman$ find / -maxdepth 2 
+/
+/home
+/usr
+/usr/bin
+/usr/standalone
+/usr/libexec
+/usr/sbin
+/usr/local
+/usr/lib
+/usr/X11
+/usr/X11R6
+/usr/share
+/.DS_Store
+
+Szuka  wszystkie pliki kture byly zmodyfikowane w ciągu 24h
+(base) MBP-Roma:255909 romafurman$ find . -mtime 1
+.
+./.DS_Store
+./f2
+./projekty
+./klucze
+./klucze/zadanie_plus_KAG1
+./klucze/zadanie_plus_KAG1/255909
+./klucze/zadanie_plus_KAG1/255909/zadanie.md
+./klucze/zadanie_plus_KAG1/255909/.git
+./klucze/zadanie_plus_KAG1/255909/.git/config
+./klucze/zadanie_plus_KAG1/255909/.git/objects
+./klucze/zadanie_plus_KAG1/255909/.git/objects/pack
+./klucze/zadanie_plus_KAG1/255909/.git/objects/pack/pack-ad6aa3ff209c0949486e9a62523c6aa16072abec.pack
+./klucze/zadanie_plus_KAG1/255909/.git/objects/pack/pack-ad6aa3ff209c0949486e9a62523c6aa16072abec.idx
+./klucze/zadanie_plus_KAG1/255909/.git/objects/info
+./klucze/zadanie_plus_KAG1/255909/.git/HEAD
+./klucze/zadanie_plus_KAG1/255909/.git/info
+./klucze/zadanie_plus_KAG1/255909/.git/info/exclude
+./klucze/zadanie_plus_KAG1/255909/.git/logs
+./klucze/zadanie_plus_KAG1/255909/.git/logs/HEAD
+

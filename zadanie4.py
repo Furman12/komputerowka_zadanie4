@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import sys
 
 ERROR_ZERO_ARGS = """Nie podałeś argumentów. Sposób użycia:
@@ -47,7 +48,7 @@ def parse_input(args):
     except IndexError as error:
         if len(args) == 1:
             print(ERROR_ZERO_ARGS)
-        elif len(args) < 3:
+        elif len(args) < 4:
             print(ERROR_FEW_ARGS)
         elif len(args) > 4:
             print(ERROR_MANY_ARGS)
